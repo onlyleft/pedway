@@ -32,9 +32,8 @@ def findDay(args):
 
 
 if __name__ == "__main__":
-    print(date.today().isoformat())
-    print(findDay(19,1,2013) > date.today())
-    print(findDay(20,1) > date.today())
-    print(findDay(1) > date.today())
-    print(findDay(6,6) > date.today())
-    print(findDay(21) > date.today())
+    print("Today is {today}".format(today=date.today().isoformat()))
+    print(findDay([19,1,2013]))
+    print(findDay([20,1]))
+    print(findDay([1]))
+    print(findDay([6,6]))
